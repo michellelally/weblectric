@@ -11,9 +11,17 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
+    background: rgb(8,127,140);
+    background: linear-gradient(90deg, rgba(8,127,140,1) 0%, rgba(134,168,115,1) 55%, rgba(187,159,6,1) 100%);
+    background-size: cover;
 }
 
+.container {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
 
 .nav ul {
     margin: 0;
@@ -46,8 +54,6 @@ html, body {
 }
 
 .header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("../assets/Header Background.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
@@ -69,14 +75,27 @@ html, body {
     padding: 0 1.5em;
 }
 
-/*
+
 .ticket-image {
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
 }
-*/
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
+}
+
+.col-sm-3 {
+    background-color: black;
+}
+
 
 .ticket-items {
     margin-left: auto;
@@ -121,6 +140,135 @@ html, body {
 
 .ticket-price {
     flex-grow: 1;
-    color: #333;
+    color: white;
 }
 
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2D9CDB;
+    color: white;
+
+}
+
+
+
+
+
+/* cart css*/
+
+
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
