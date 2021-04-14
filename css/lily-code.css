@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+#nav li {
+    float: left; /*floats list items left*/
+    }
+
+ 
+
+#nav {
+    width: 100%; /*makes the menu width the same as the window width*/
+    float: left; /*floats the list left*/
+    margin: 0 0 0 0; /*removes margin*/
+    padding: 1%;
+    margin-bottom: 5%;
+    list-style: none; /*removes bullets from the list*/
+    background-color: #3BEB88;
+    border-bottom: 1px solid #F3AAAC;
+    border-top: 1px solid #F3AAAC;
+    } 
+
+ 
+
+#nav li a {
+    display: block; /*fills up the entire list item and makes the whole area
+    clickable*/
+    padding: 8px 50px; /*padding will space them out a bit*/
+    text-decoration: none; /*removes the underline from the anchor*/
+    font-family:ultra;
+    color: #097F8B;
+    border-right: 1px solid #ccc;
+    }
+
+ 
+
+#nav li a:hover {
+    color: #F3AAAC;
+    background-color: #EEEF94;
+    }

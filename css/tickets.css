@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("../assets/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.festival-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.content-section {
+    margin: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+/*
+.ticket-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+}
+*/
+
+.ticket-items {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1%;
+    max-width: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-section {
+    max-width: 100%;
+    height: auto;
+    width: auto; 
+}
+
+
+
+/* overlay over pic */ 
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5%;
+}
+
+/* 
+.ticket-image {
+    height: 250px;
+} */
+
+
+.ticket-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.ticket-price {
+    flex-grow: 1;
+    color: #333;
+}
+

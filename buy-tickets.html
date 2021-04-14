@@ -1,31 +1,135 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-    <head>
+<head>
 
-        <title>Virtopolis</title>
-        <meta name="description" content="Buy Tickets to the Online Virtual Festival - Virtopolis">
-        <link rel="stylesheet" href="styles.css" />
-        <script src="buy-tickets.js" async></script>
-    
-    </head>
+    <title>Festival Name</title>
 
-    <body>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Buy Tickets to the Online Virtual Festival - Weblectric">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/tickets.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
 
         <header class="header">
-            <nav class="navbar">
+
+            <nav class="nav">
+
                 <ul>
+
                     <li><a href="index.html">HOME</a></li>
+
                     <li><a href="store.html">BUY TICKETS</a></li>
+
                     <li><a href="about.html">ABOUT</a></li>
+
                 </ul>
+
             </nav>
-            <h1 class="festival-name">The Generics</h1>
+
+            <h1 class="festival-name">Festival Name</h1>
+
         </header>
 
+        <h2 class="ticket-header">TICKETS</h2>
 
-    
-    </body>
+        <div class="row">
+
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-3">
+
+                <div class="ticket-icon">
+
+                    <img class="ticket-image" src="././assets/ticket-bg1.jpeg" alt="Early Bird Ticket">
+
+                    <div class="ticket-details">
+
+                        <span class="ticket-price"> €120.99</span>
+
+                        <button class="ticket-button" type="button">ADD TO CART</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-sm-3">
+
+                <div class="ticket-icon">
+
+                    <img class="ticket-image" src="././assets/ticket-bg2.jpeg" alt="Day Ticket">
+
+                    <div class="ticket-details">
+
+                        <span class="ticket-price">€140.99</span>
+
+                        <button class="ticket-button" type="button">ADD TO CART</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-3"></div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="ticket-icon">
+
+                <img class="ticket-image" src="././assets/ticket-bg3.jpeg" alt="Family Ticket">
+
+                <div class="ticket-details">
+
+                    <span class="ticket-price">€190.99</span>
+
+                    <button class="ticket-button" type="button">ADD TO CART</button>
+
+                </div>
+
+            </div>
+
+            <div class="ticket-icon">
+
+                <img class="ticket-image" src="././assets/ticket-bg4.jpeg" alt="VIP Ticket">
+
+                <div class="ticket-details">
+
+                    <span class="ticket-price">€99.99</span>
+
+                    <button class="ticket-button" type="button">ADD TO CART</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
 
 </html>
