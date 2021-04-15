@@ -83,7 +83,7 @@ html, body {
     opacity: 0.6;
 }
 
-.image-text {
+.ticket-name {
     position: absolute;
     top: 50%;
     left: 50%;

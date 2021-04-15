@@ -53,7 +53,7 @@ function quantityChanged(event) {
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('ticket-title')[0].innerText
+    var title = shopItem.getElementsByClassName('ticket-name')[0].innerText
     var price = shopItem.getElementsByClassName('ticket-price')[0].innerText
     addItemToCart(title, price)
     updateCartTotal()
