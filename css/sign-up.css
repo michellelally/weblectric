@@ -1,0 +1,43 @@
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error {
+    color: #BD0000;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 2.5%;
+    margin: 1% 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #56CCF2;
+    border: none;
+    color: white;
+
+}
+
+button:hover {
+    background-color: #2D9CDB;
+    color: white;
+}
+
+.cancel-btn {
+    margin: 1% 0;
+    background-color: #686a71;
+}
+
+.cancel-btn:hover {
+    background-color: #494a50;
+    color: white;
+}
+

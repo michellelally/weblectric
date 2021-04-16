@@ -62,46 +62,43 @@
 
         <div class="col-md-4">
 
+            <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
+            <p class="error" id="length-error"></p> <!-- HTML5 p tag for displaying an error message -->
+            <p class="error" id="match-error"></p> <!-- HTML5 p tag for displaying an error message -->
+
+
             <form id="sign-up-form">
 
                 <table>
 
+
                     <tr>
                         <td>
-                            <p  id="error"></p> <!-- HTML5 p tag for displaying an error message -->
-                            <p  id="length-error"></p> <!-- HTML5 p tag for displaying an error message -->
-                            <p  id="match-error"></p> <!-- HTML5 p tag for displaying an error message -->
+                            <input type="text" id="firstname" size="15" placeholder="First name*" required />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input type="text" id="firstname" size="15" placeholder="First name*" required></input>
+                            <input type="text" id="surname" size="15" placeholder="Last name*" required />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input type="text" id="surname" size="15" placeholder="Last name*" required></input>
+                            <input type="email" id="email" placeholder="Email address*" required />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input type="email" id="email" placeholder="Email address*" required></input>
+                            <input id="password" placeholder="Enter Password*" type="password" required />
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input id="password" placeholder="Enter Password*" type="password" required></input>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input id="password-check" placeholder="Re-enter Password*" type="password"
-                                required></input>
+                            <input id="password-check" placeholder="Re-enter Password*" type="text" required />
                         </td>
                     </tr>
 
@@ -249,6 +246,7 @@
                     </tr>
 
                 </table>
+
             </form>
 
         </div>
@@ -268,7 +266,7 @@
         text-align: center;
     }
 
-    .error,  {
+    .error {
         color: #BD0000;
     }
 
