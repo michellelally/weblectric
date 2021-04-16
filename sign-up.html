@@ -20,7 +20,20 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- This loads the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+
+        (function () {
+            // this line initializes the SDK with the User ID we ontained when creating our account
+            emailjs.init('user_Ys8NF4lZ1w8bB1saBzqXz');
+        })();
+    </script>
+
     <script src="./js/sign-up.js"></script>
+
+    
 
 </head>
 

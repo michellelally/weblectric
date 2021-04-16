@@ -1,3 +1,43 @@
+var loggedIn =false;
+window.onload = function () {
+
+    // using an eventListener to register when the user clicks the submit button
+    document.getElementById('sign-up-form').addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        // getting the users email address from the form
+        var email = document.getElementById("email").value;
+
+        // getting the users name from the form
+        var name = document.getElementById("firstname").value;
+
+        // this is an object that is used by the EmailJS template for the email
+        // these are needed to have the users name displayed in the email and to send it to their inbox
+        // setting the variables to the users email and name
+        var templateParams = {
+            email: email,
+            name: name,
+        };
+
+        // this function is responsible for sending the email 
+        // the paramters are unique identifiers provided on our EmailJS account
+        // the first parameter is a service id, which is what connects our email address with EmailJS 
+        // the second is the template id, this will determine what the email says and is set up on the EmailJS dashboard
+        if (loggedIn == true){
+            emailjs.send('service_he5dnbc', 'template_9hbccd7', templateParams)
+            .then(function () {
+                // displays success to the console if the email was sent
+                console.log('SUCCESS!');
+            }, function (error) {
+                // displays failed to the console if the email was not sent
+                console.log('FAILED...', error);
+            });
+        }
+
+    });
+}
+
 function validateForm() {
 
     //setting x to the value of username in the login form
@@ -12,37 +52,35 @@ function validateForm() {
     }
 }
 
-// function validateEmail(email) {
-//     alert("validateEmail()");
+function validateEmail(email) {
+    alert("validateEmail()");
 
-//     var re = /\S+@\S+\.\S+/;
-//     if (re.test(email)) {
-//         console.log("correct email");
-//         store();
-//     }
-// }
+    var re = /\S+@\S+\.\S+/;
+    if (re.test(email)) {
+        console.log("correct email");
+        store();
+    }
+}
 
 function store() {
-    alert("store()");
 
     var firstname = document.getElementById("firstname");
     var surname = document.getElementById("surname");
     var email = document.getElementById("email");
     var password = document.getElementById("password");
 
-
     localStorage.firstname = firstname.value;
     localStorage.surname = surname.value;
     localStorage.password = password.value;
     localStorage.email = email.value;
-
-    console.log("email:" + email.value);
-    //  window.open("LandingPage.html");
+    localStorage.loggedIn = true;
+    loggedIn = true;
+    //  window.open("index.html");
 }
 
 function signIn() {
 
-    alert("signIn");
+
 
     //calling the validateForm() function
     validateForm();
@@ -51,8 +89,6 @@ function signIn() {
     var password = document.getElementById("password").value;
     var passwordCheck = document.getElementById("password-check").value;
 
-    alert(password);
-    alert(passwordCheck);
     // checking if the length is >=8
 
     if (password.length >= 8) {
@@ -62,7 +98,6 @@ function signIn() {
 
         // locale compare returns 0 or 1, 0 if the strings are the same or 1 if they are incorrect
         // checking if x = 0
-        alert(x)
         if (x == 0) {
             store();
         } else {
