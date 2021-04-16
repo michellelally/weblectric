@@ -15,6 +15,7 @@ html, body {
     background: rgb(8,127,140);
     background: linear-gradient(90deg, rgba(8,127,140,1) 0%, rgba(134,168,115,1) 55%, rgba(187,159,6,1) 100%);
     background-size: cover;
+
 }
 
 .container {
@@ -33,14 +34,14 @@ html, body {
 
 .nav a {
     display: inline-block;
-    padding: .5em;
+    padding: 1%;
     color: white;
     text-decoration: none;
 }
 
 .nav {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.1vw;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
@@ -56,25 +57,22 @@ html, body {
 .header {
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 1%;
 }
 
 .festival-name {
     text-align: center;
     margin: 0;
-    font-size: 4em;
+    font-size: 4vw;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
 }
 
 .content-section {
-    margin: 1em;
-    max-width: 900px;
+    margin: 5%;
     margin: 0 auto;
-    padding: 0 1.5em;
 }
-
 
 .ticket-image {
     position: relative;
@@ -90,18 +88,16 @@ html, body {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2vw;
+    text-align: center;
 }
 
 .col-sm-3 {
     background-color: black;
 }
 
-
 .ticket-items {
     margin-left: auto;
     margin-right: auto;
-    margin: 1%;
-    max-width: 100;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -113,29 +109,17 @@ html, body {
     width: auto; 
 }
 
-
-
-/* overlay over pic */ 
-.shop-item-title {
-    display: block;
-    width: 100%;
+.section-title {
+    font-weight: normal;
+    color:white;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 0.5%;
+    font-size: 2vw;
 }
-
-/* 
-.ticket-image {
-    height: 250px;
-} */
-
 
 .ticket-details {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 2%;
 }
 
 .ticket-price {
@@ -146,12 +130,12 @@ html, body {
 .btn {
     text-align: center;
     vertical-align: middle;
-    padding: .67em .67em;
+    padding: .5% .5%;
     cursor: pointer;
     color: white;
     background-color: #56CCF2;
     border: none;
-    border-radius: .3em;
+    border-radius: .1%;
     font-weight: bold;
 }
 
@@ -161,19 +145,12 @@ html, body {
 
 }
 
-
-
-
-
 /* cart css*/
-
-
-
 
 
 .cart-header {
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.8vw;
     color: white;
 }
 
@@ -269,6 +246,39 @@ html, body {
 
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.75em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .2%;
+    display: inline;
+}
+
+.footer-nav img {
+    width: 10%;
+    height: 10%;
 }
