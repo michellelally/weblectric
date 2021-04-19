@@ -1,130 +1,173 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- HTML5 doctype -->
 
 <html lang="en">
+<!-- HTML5 opening HTML tag with language -->
 
 <head>
+    <!-- HTML5 opening head tag -->
 
+    <!-- Title of website -->
     <title>Sign Up</title>
 
+    <!-- HTML5 charset -->
     <meta charset="UTF-8">
 
+    <!-- Description of website -->
     <meta name="description" content="Buy Tickets to the Online Virtual Festival - Weblectric">
 
+    <!-- Broswer Instructions for scaling  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- External CSS Stylesheet link -->
     <link rel="stylesheet" href="./css/tickets.css" />
 
+    <!-- External Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+    <!-- External jQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- External Bootstrap link -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- This loads the EmailJS SDK -->
+    <!-- Loading the EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
+    <!-- Internal JavaScript link -->
     <script type="text/javascript">
 
+        // this function is necessary to use EmailJS - read more about this is sign-up.js
         (function () {
             // this line initializes the SDK with the User ID we ontained when creating our account
             emailjs.init('user_Ys8NF4lZ1w8bB1saBzqXz');
         })();
+        
     </script>
 
+    <!-- External JavaScript link -->
     <script src="./js/sign-up.js"></script>
-
-
 
 </head>
 
+<!-- HTML5 opening body tag -->
 <body>
 
+    <!-- HTML5 div tag used to create a wrapper for the page -->
     <div class="wrapper">
 
+        <!-- HTML5 div tag used to create a header for the title and navigation -->
         <header class="header">
 
-            <nav class="nav">
+            <!-- HTML5 nav tag -->
+            <nav class="main-nav nav">
 
+
+                <!-- HTML5 unordered list with ahref links in each list item -->
+                <!-- This ul creates the navigation bar for the website -->
                 <ul>
 
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
+                    <li><a href="index.html">HOME</a></li>
 
-                    <li>
-                        <a href="store.html">BUY TICKETS</a>
-                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
 
-                    <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
+                    <li><a href="L.html">LINE UP</a></li>
+
+                    <li><a href="store.html">BUY TICKETS</a></li>
+
+                    <li><a href="about.html">GET INVOLVED</a></li>
 
                 </ul>
 
             </nav>
 
+            <!-- HTML5 h1 tag for displaying a heading -->
             <h1 class="festival-name">Weblectric</h1>
 
         </header>
 
-
+        <!-- HTML5 h2 tag for displaying a heading -->
         <h2 class="section-title">Create a Weblectric account</h2>
 
-
+        <!-- HTML5 div tag for generating a column  -->
         <div class="col-md-4"></div>
 
+        <!-- HTML5 div tag for generating a column  -->
         <div class="col-md-4">
 
+            <!-- HTML5 form which allows the user to sign up -->
             <form id="sign-up-form">
 
+                <!-- HTML5 table for displaying the form neatly -->
                 <table>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
                             <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
                         </td>
                     </tr>
 
-
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
+                            <!-- HTML5 input tag for recieving the users firstname -->
                             <input type="text" id="firstname" size="15" placeholder="First name*" required>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
+                            <!-- HTML5 input tag for recieving the users surname -->
                             <input type="text" id="surname" size="15" placeholder="Last name*" required>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
+                            <!-- HTML5 input tag for recieving the users email -->
                             <input type="email" id="email" placeholder="Email address*" required>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
+                            <!-- HTML5 input tag for recieving the users password -->
                             <input id="password" placeholder="Enter Password*" type="password" required>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
+                            <!-- HTML5 input tag for recieving the users password -->
                             <input id="password-check" placeholder="Re-enter Password*" type="password" required>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
-                            <button type="submit" onclick="signIn()">Sign Up</button>
+                            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
+                            <button type="submit" onclick="signIn()">SIGN UP</button>
                         </td>
                     </tr>
 
+                    <!-- HTML5 tr tag for creating a row in a table -->
                     <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
                         <td>
-                            <button type="reset" class="cancel-btn">Cancel</button>
+                            <!-- HTML5 button tag for clearing the data inputted by the user -->
+                            <button type="reset" class="cancel-btn">CANCEL</button>
                         </td>
                     </tr>
 
@@ -132,15 +175,21 @@
 
             </form>
 
+            <br>
+
         </div>
 
-
+        <!-- HTML5 div tag for generating a column  -->
         <div class="col-md-4"></div>
+
 
         <footer class="main-footer">
 
+
             <div class="footer-nav nav">
 
+                <!-- HTML5 unordered list with images in each list item -->
+                <!-- This ul creates a neat arrangement of the sites sponsors logos  -->
                 <ul>
 
                     <li>
@@ -164,29 +213,45 @@
                     </li>
                 </ul>
 
+                <!-- HTML5 unordered list with images in each list item -->
+                <!-- This ul creates a neat arrangement of images for the sites social media icons  -->
                 <ul>
 
                     <li>
-                        <img src="./assets/yotuube.png" alt="YouTube">
+                        <img class="socials" src="./assets/yotuube.png" alt="YouTube">
                     </li>
 
                     <li>
-                        <img src="./assets/facebook.png" alt="Facebook">
+                        <img class="socials" src="./assets/facebook.png" alt="Facebook">
                     </li>
 
                     <li>
-                        <img src="./assets/spotify.png" alt="Spotify">
+                        <img class="socials" src="./assets/spotify.png" alt="Spotify">
                     </li>
+
+                    <!-- 
+
+                    <li>
+                        <a href src="www.youtube.com"><img class="socials" src="./assets/yotuube.png" alt="YouTube"></a>
+                    </li>
+
+                    <li>
+                        <a href src="www.facebook.com"><img class="socials" src="./assets/facebook.png" alt="Facebook"></a>
+                    </li>
+
+                    <li>
+                        <a href src="www.spotify.com"><img class="socials" src="./assets/spotify.png" alt="Spotify"></a>
+                    </li> -->
 
                 </ul>
-                
+
             </div>
 
     </div>
 
-
 </body>
 
+<!-- Internal CSS tag -->
 <style>
     table {
         width: 75%;
@@ -221,11 +286,12 @@
     }
 
     .cancel-btn {
-        margin: 1% 0;
+        margin: 1% 0 1% 0;
         background-color: #686a71;
     }
 
     .cancel-btn:hover {
+
         background-color: #494a50;
         color: white;
     }

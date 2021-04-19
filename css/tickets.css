@@ -282,18 +282,18 @@ a:link{
     border-top: 1px solid rgba(255, 255, 255, .3);
     text-align: center;
     margin-top: 2.5%;
-    padding-top: 1%;
     color: white;
     min-width: 100%;
-}
-
-.main-footer-container {
     display: flex;
-    align-items: center;
 }
 
 .main-footer img {
     height: 5%;
     width: 5%;
     padding: 1%;
+}
+
+.socials {
+    height: 50%;
+    width: 50%;
 }

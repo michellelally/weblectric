@@ -1,7 +1,13 @@
-var errorMsg = document.getElementById("error");
-
 var loggedIn = false;
 
+/*
+    Using the documentation provided on the EmailJS website, this page can recieve user input from a HTML form and send an automatic email to the address provided.
+    Here is the link to the docs that we used: 
+    https://www.emailjs.com/docs/tutorial/creating-contact-form/ 
+
+*/
+
+// this function includes the code I was provided with on the EmailJS docs
 window.onload = function () {
 
     // using an eventListener to register when the user clicks the submit button
@@ -45,6 +51,7 @@ window.onload = function () {
     });
 }
 
+// this is a function I used from CA2 to ensure the user is aware that the password must not be blank
 function validateForm() {
 
     //setting x to the value of username in the login form
@@ -53,12 +60,13 @@ function validateForm() {
     //checking if the variable x is left blank 
     if (x == null || x == "") {
 
-        // alert the user
-        alert("Password can not be blank.");
+        // update the HTML to display en error to the user
+        document.getElementById("error").innerHTML = "Error: Password cannot be blank";
         return false;
     }
 }
 
+// this function will ensure the user has entered a valid email address
 function validateEmail(email) {
     // https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
     // using a code snippet from the stack overflow link above, I used regular expression matching 
@@ -71,30 +79,60 @@ function validateEmail(email) {
         store();
     } else {
         // if email is invalid, display this error message 
-        errorMsg.innerHTML += "Error: Invalid email address <br>";
+        document.getElementById("error").innerHTML = "Error: Invalid email address <br>";
     }
 }
 
+// this function is responsible for saving the users information to local storage
 function store() {
+
+    // getting the HTML element with an id of firstname 
     var firstname = document.getElementById("firstname").value;
+
+    // getting the HTML element with an id of surname 
     var surname = document.getElementById("surname").value;
+
+    // getting the HTML element with an id of email
     var email = document.getElementById("email").value;
+
+    // getting the HTML element with an id of password
     var password = document.getElementById("password").value;
+
+    // creating a space in the users browser to store their firstname 
     localStorage.firstname = firstname;
+
+    // creating a space in the users browser to store their surname 
     localStorage.surname = surname;
+
+    // creating a space in the users browser to store their password 
     localStorage.password = password;
+
+    // creating a space in the users browser to store their email 
     localStorage.email = email;
+
+    // creating a space in the users browser to store their log in status
     localStorage.loggedIn = true;
+
+    // setting loggedIn to true
     loggedIn = true;
+
+    // redirecting the user back to the homepage 
     // window.open("index.html");
 }
 
+// this function is called when the user clicks sign up and begins the form validation 
 function signIn() {
+
     //calling the validateForm() function
     validateForm();
 
+    // getting the HTML element with an id of password
     var password = document.getElementById("password").value;
+
+    // getting the HTML element with an id of password-check
     var passwordCheck = document.getElementById("password-check").value;
+    
+    // getting the HTML element with an id of email
     var email = document.getElementById("email").value;
 
     // checking if the length is >=8
@@ -106,16 +144,15 @@ function signIn() {
         // locale compare returns 0 or 1, 0 if the strings are the same or 1 if they are incorrect
         // checking if x = 0
         if (x == 0) {
+            // calling the validate email function
             validateEmail(email);
-            store();
         } else {
-            errorMsg.innerHTML += "Error: Passwords must match. <br>";
+            // update the HTML to display an error to the user
+            document.getElementById("error").innerHTML = "Error: Passwords must match. <br>";
         }
 
     } else {
-        // update the html of the elements with id of error and login_error
-        errorMsg.innerHTML += "Error: Password must be 8 characters in length. <br>"
+        // update the HTML to display an error to the user
+        document.getElementById("error").innerHTML = "Error: Password must be 8 characters in length. <br>"
     }
 }
-
-
