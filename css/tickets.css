@@ -11,19 +11,47 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
     background: rgb(8,127,140);
     background: linear-gradient(90deg, rgba(8,127,140,1) 0%, rgba(134,168,115,1) 55%, rgba(187,159,6,1) 100%);
     background-size: cover;
 
 }
 
-.container {
+
+.nav ul {
     margin: 0;
-    width: 100%;
-    padding: 0;
 }
 
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1% .25% 1% .25%;
+
+}
+
+a:link{
+    text-decoration: none!important;
+  }
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    color: white;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+/* 
 .nav ul {
     margin: 0;
 }
@@ -48,7 +76,7 @@ html, body {
 
 .nav li {
     padding: 0 5%;
-}
+} */
 
 .nav a:hover {
     background-color: rgba(255, 255, 255, .3)
@@ -67,6 +95,7 @@ html, body {
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
+    padding: 2.5%;
 }
 
 .content-section {
@@ -91,10 +120,6 @@ html, body {
     text-align: center;
 }
 
-.col-sm-3 {
-    background-color: black;
-}
-
 .ticket-items {
     margin-left: auto;
     margin-right: auto;
@@ -114,6 +139,8 @@ html, body {
     color:white;
     text-align: center;
     font-size: 2vw;
+    padding: 1%;
+    margin: 0;
 }
 
 .ticket-details {
@@ -250,16 +277,14 @@ html, body {
     text-align: center;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 1.5em;
-}
-
 .main-footer {
-    background-color: #56CCF2;
+    bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    margin-top: 2.5%;
+    padding-top: 1%;
     color: white;
-    padding: .25em 0;
-
+    min-width: 100%;
 }
 
 .main-footer-container {
@@ -267,26 +292,8 @@ html, body {
     align-items: center;
 }
 
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .2%;
-    display: inline;
-}
-
-.footer-nav img {
-    width: 10%;
-    height: 10%;
-}
-
-.footer-nav a {
-    display: inline-block;
+.main-footer img {
+    height: 5%;
+    width: 5%;
     padding: 1%;
-    color: white;
-    text-decoration: none;
 }
-
-
