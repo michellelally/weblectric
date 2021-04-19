@@ -15,7 +15,6 @@ html, body {
     background: rgb(8,127,140);
     background: linear-gradient(90deg, rgba(8,127,140,1) 0%, rgba(134,168,115,1) 55%, rgba(187,159,6,1) 100%);
     background-size: cover;
-
 }
 
 
@@ -88,7 +87,7 @@ a:link{
     padding-bottom: 1%;
 }
 
-.festival-name {
+/* .festival-name {
     text-align: center;
     margin: 0;
     font-size: 4vw;
@@ -96,7 +95,8 @@ a:link{
     font-weight: normal;
     color: white;
     padding: 2.5%;
-}
+} */
+
 
 .content-section {
     margin: 5%;
@@ -177,7 +177,7 @@ a:link{
 
 .cart-header {
     font-weight: bold;
-    font-size: 1.8vw;
+    font-size: 1vw;
     color: white;
 }
 
@@ -252,12 +252,12 @@ a:link{
 .cart-row:last-child .cart-column {
     border: none;
 }
-
+/* 
 .cart-total {
     text-align: end;
     margin-top: 10px;
     margin-right: 10px;
-}
+} */
 
 .cart-total-title {
     font-weight: bold;

@@ -1,0 +1,64 @@
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1% .25% 1% .25%;
+
+}
+
+a:link{
+    text-decoration: none!important;
+  }
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    color: white;
+    font-family: Raleway;
+
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+/* 
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.nav li {
+    padding: 0 5%;
+} */
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}

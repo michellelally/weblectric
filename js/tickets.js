@@ -68,13 +68,16 @@ function ready() {
 // removes items from the cart once they're purchased
 // redirects to PayPal 
 function purchaseClicked() {
+
     // check if logged in 
     if(localStorage.getItem("loggedIn")) {
         // paypal button 
     } else { 
+        // alert the user
+        alert("You must have an account to purchase!")
         window.open("sign-up.html")
     }
-}
+
 
     // getting element with a class name of cart-items and storing the item at index 0 to a variable
     var cartItems = document.getElementsByClassName('cart-items')[0]

@@ -1,0 +1,215 @@
+
+/*Stylesheet for Homepage and About Page*/
+
+
+/*import google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("//fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+
+/*Styling the body*/
+
+
+/*Styling the sliding image*/
+
+.wrapper{/*to hide overflowing content.*/
+	overflow: hidden;
+	}
+
+.sliding-background{/*styling the sliding background image.*/
+	background: url("slider.jpg") repeat-x;
+	height: 200px;
+	width: 5076px;
+	animation: slide 60s linear infinite;/*to keep it sliding ad infinitum*/
+	padding:1%;
+	}
+
+@keyframes slide{/*using keyframes on sliding background image with transform element*/
+	0%{
+		transform: translate3d(0, 0, 0);
+	}
+	100%{
+		transform: translate3d(-1692px, 0, 0);
+	}
+}
+
+
+/*Styling the modal box for discount code*/
+
+#myModal {/*positions the modal box in the window*/
+	top:60%;
+	left:60%;
+	outline:none;
+	}
+
+.modal-body{/*changing modal background color*/
+	background:#EC88C1;
+}
+
+/*Styling the content divs*/
+
+#content1, #content2{
+	background-color:black;
+	display: block;
+	clear:left;/*clear any floats*/
+	text-align:center;
+	margin-top:none;
+	margin-bottom:8%;
+	margin-right:15%;
+	margin-left:15%;
+	padding-top:1%;
+	padding-bottom:1%;
+	}
+
+#content2{
+	padding-left:1.2%;
+	padding-right:1.2%;
+	padding-bottom:2%;
+	}
+
+/*Styling the fonts*/
+
+h1 {
+	font-family: ultra;
+	font-size: 9vw;
+	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+h2{
+	text-align:left;
+	font-family:Nunito;
+	font-size: 6vw;
+	padding-left:5%;
+	color:white;	
+	}
+	
+h3{
+	text-align:justify;
+	font-family:Nunito;
+	font-size: 2vw;
+	color:white;	
+	}
+	
+h4{
+	font-family:ultra;
+	font-size: 3vw;
+	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+	
+
+
+
+h5{
+	text-align:left;
+	font-family:Nunito;
+	font-size: 3vw;
+	padding-left:5%;
+	color:white;	
+	}	
+
+p{
+	font-family:ultra;
+	font-size: 7vw;
+	background: -webkit-linear-gradient(#EC88C1, #9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25)););
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+	
+p1{
+	font-family:ultra;
+	font-size: 8vw;
+	background: -webkit-linear-gradient(#EC88C1, #9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+	
+/* Styling subscribe button, modal box, and modal box close button*/
+
+.popup-btn, .btn {/* styling the 'Subscribe for more!' button and the close button in modal box*/
+  display: inline-block;
+  padding-top: 2%;
+  padding: 0.5rem 2rem;
+  border: 15px double #333333;
+  text-decoration: none;
+  color: #333333;
+  background: #F9BD46;
+  font-size: 3vw;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transform: scale(1, 1) skew(-5deg, -5deg);/*use transform to slightly rotate the button*/
+  transition: all 400ms ease 0s;
+  box-shadow: 0px 0px 5px 0px white;
+  font-family: Ultra;
+}
+
+/*Adjustments to the close button in modal box*/
+.btn{
+	font-size: 1vw;
+	border: 5px double #333333;
+	transform: scale(1, 1) skew(0deg, 0deg);
+}
+
+/*Creating the subscribe and close button hover effect*/
+.btn:hover, .popup-btn:hover {/*creating effects on hover*/
+  transform: scale(1.2, 1.2) skew(-5deg, -5deg);
+  transition: all 400ms ease 0s; 
+}
+
+/*adjusting the close button hover effect*/
+.btn:hover{
+	transform: scale(1.2, 1.2) skew(0deg, 0deg);
+}
+
+.modal.in .modal-dialog {/*ensures the modal box pops up within the window frame and creates transition effect*/
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition-delay: 0.2s;
+}
+
+.modal-content {/*styles the content of the modal box*/
+  position: relative;
+  background-color: #064977;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+@media (min-width: 768px) {/*media query for modal dialog and content classes*/
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+#modalTable{/*styles modal table*/
+	font-family:Ultra;
+	color:#064977;
+	clear:both;
+	margin-top:0;
+	margin-left:5%;
+	margin-right:4.5%;
+	background-color:#F9BD46;
+	padding:10%;
+	}
+
+/*Styling the columns in the row inside the modal subscribe box*/	
+.col-sm-2{
+	padding-top:5%;
+	padding-left: none;
+	padding-right: none;
+}

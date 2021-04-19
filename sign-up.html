@@ -21,6 +21,9 @@
     <!-- External CSS Stylesheet link -->
     <link rel="stylesheet" href="./css/tickets.css" />
 
+    <!-- External CSS Stylesheet link -->
+    <link rel="stylesheet" href="./css/template.css" />
+
     <!-- External Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -41,7 +44,7 @@
             // this line initializes the SDK with the User ID we ontained when creating our account
             emailjs.init('user_Ys8NF4lZ1w8bB1saBzqXz');
         })();
-        
+
     </script>
 
     <!-- External JavaScript link -->
@@ -50,6 +53,7 @@
 </head>
 
 <!-- HTML5 opening body tag -->
+
 <body>
 
     <!-- HTML5 div tag used to create a wrapper for the page -->
@@ -80,107 +84,112 @@
 
             </nav>
 
-            <!-- HTML5 h1 tag for displaying a heading -->
-            <h1 class="festival-name">Weblectric</h1>
+
 
         </header>
 
-        <!-- HTML5 h2 tag for displaying a heading -->
-        <h2 class="section-title">Create a Weblectric account</h2>
+        <div id="main-content">
+            <!-- HTML5 h1 tag for displaying a heading -->
+            <h1 class="festival-name">Weblectric</h1>
 
-        <!-- HTML5 div tag for generating a column  -->
-        <div class="col-md-4"></div>
+            <!-- HTML5 h2 tag for displaying a heading -->
+            <h2 class="section-title">Create a Weblectric account</h2>
 
-        <!-- HTML5 div tag for generating a column  -->
-        <div class="col-md-4">
+            <!-- HTML5 div tag for generating a column  -->
+            <div class="col-md-4"></div>
 
-            <!-- HTML5 form which allows the user to sign up -->
-            <form id="sign-up-form">
+            <!-- HTML5 div tag for generating a column  -->
+            <div class="col-md-4">
 
-                <!-- HTML5 table for displaying the form neatly -->
-                <table>
+                <!-- HTML5 form which allows the user to sign up -->
+                <form id="sign-up-form">
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
-                        </td>
-                    </tr>
+                    <!-- HTML5 table for displaying the form neatly -->
+                    <table>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users firstname -->
-                            <input type="text" id="firstname" size="15" placeholder="First name*" required>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users surname -->
-                            <input type="text" id="surname" size="15" placeholder="Last name*" required>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 input tag for recieving the users firstname -->
+                                <input type="text" id="firstname" size="15" placeholder="First name*" required>
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users email -->
-                            <input type="email" id="email" placeholder="Email address*" required>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 input tag for recieving the users surname -->
+                                <input type="text" id="surname" size="15" placeholder="Last name*" required>
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users password -->
-                            <input id="password" placeholder="Enter Password*" type="password" required>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 input tag for recieving the users email -->
+                                <input type="email" id="email" placeholder="Email address*" required>
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users password -->
-                            <input id="password-check" placeholder="Re-enter Password*" type="password" required>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 input tag for recieving the users password -->
+                                <input id="password" placeholder="Enter Password*" type="password" required>
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
-                            <button type="submit" onclick="signIn()">SIGN UP</button>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 input tag for recieving the users password -->
+                                <input id="password-check" placeholder="Re-enter Password*" type="password" required>
+                            </td>
+                        </tr>
 
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 button tag for clearing the data inputted by the user -->
-                            <button type="reset" class="cancel-btn">CANCEL</button>
-                        </td>
-                    </tr>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
+                                <button type="submit" onclick="signIn()">SIGN UP</button>
+                            </td>
+                        </tr>
 
-                </table>
+                        <!-- HTML5 tr tag for creating a row in a table -->
+                        <tr>
+                            <!-- HTML5 td tag for inserting data into the row -->
+                            <td>
+                                <!-- HTML5 button tag for clearing the data inputted by the user -->
+                                <button type="reset" class="cancel-btn">CANCEL</button>
+                            </td>
+                        </tr>
 
-            </form>
+                    </table>
 
-            <br>
+                </form>
+
+                <br>
+
+            </div>
+
+            <!-- HTML5 div tag for generating a column  -->
+            <div class="col-md-4"></div>
 
         </div>
-
-        <!-- HTML5 div tag for generating a column  -->
-        <div class="col-md-4"></div>
 
 
         <footer class="main-footer">
