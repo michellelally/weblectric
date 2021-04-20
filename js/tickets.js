@@ -70,18 +70,16 @@ function ready() {
 function purchaseClicked() {
 
     // check if logged in 
-    if(localStorage.getItem("loggedIn")) {
-        // paypal button 
-    } else { 
-        // alert the user
+    if (!localStorage.getItem("loggedIn")) {
         alert("You must have an account to purchase!")
         window.open("register.html")
+        return;
     }
 
 
     // getting element with a class name of cart-items and storing the item at index 0 to a variable
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    
+
     // while the element has other elements inside it,
     while (cartItems.hasChildNodes()) {
 
@@ -178,7 +176,7 @@ function addItemToCart(title, price) {
 
             // alert the user
             alert('This item is already added to the cart')
-            
+
             // exit the function 
             return
         }
@@ -244,6 +242,8 @@ function updateCartTotal() {
 
     // using the Math class to round the total to the nearest 100 
     total = Math.round(total * 100) / 100
+
+    // document.getElementById("paypal-price").value = total;
 
     // getting element with a class name of cart-items and storing the item at index 0 to a variable
     // updating the inner text to the updated total 
