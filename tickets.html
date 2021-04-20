@@ -32,6 +32,19 @@
     <!--Insert flavicon with Weblectric icon to display with title-->
     <link rel="icon" href="./assets/favicon.ico" type="image/icon type">
 
+    <script>
+        // check if logged in 
+        // if the user is not logged in
+        if (!localStorage.getItem("loggedIn")) {
+
+            // alert the user they must have an account to buy a ticket
+            alert("You must have an account to purchase!")
+
+            //re direct them to the register page
+            window.location.href = "register.html"
+        }
+    </script>
+
     <!-- External Bootsrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -45,6 +58,21 @@
     <!-- async tells the browser to load the JS and HTML at the same time -->
     <!-- This is needed for the shopping cart - read more about this in tickets.js -->
     <script src="./js/tickets.js" async></script>
+
+
+    <!-- Loading the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- Internal JavaScript link -->
+    <script type="text/javascript">
+
+        // this function is necessary to use EmailJS - read more about this is sign-up.js
+        (function () {
+            // this line initializes the SDK with the User ID we ontained when creating our account
+            emailjs.init('user_Ys8NF4lZ1w8bB1saBzqXz');
+        })();
+
+    </script>
 
 </head>
 
@@ -264,8 +292,8 @@
                 </div>
 
                 <!-- HTML5 button to purchase items -->
-                <button class="btn btn-primary btn-purchase" type="button">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="weblectricvirtualfestival@gmail.com">
                     <input type="hidden" name="lc" value="US">
@@ -279,69 +307,67 @@
                         name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
                         height="1">
+
                 </form>
-                </button>
 
             </div>
 
         </div>
 
-    </div>
+        <!-- HTML5 footer tag for creating a footer -->
+        <footer class="main-footer">
 
-    <!-- HTML5 footer tag for creating a footer -->
-    <footer class="main-footer">
+            <!-- HTML5 div tag for a container for the footer  -->
+            <div class="footer-nav nav">
 
-        <!-- HTML5 div tag for a container for the footer  -->
-        <div class="footer-nav nav">
+                <!-- HTML5 unordered list with images in each list item -->
+                <!-- This ul creates a neat arrangement of the sites sponsors logos  -->
+                <ul>
+                    <li>
+                        <img src="./assets/footer-logo-6.png" alt="Ruby Productions">
+                    </li>
 
-            <!-- HTML5 unordered list with images in each list item -->
-            <!-- This ul creates a neat arrangement of the sites sponsors logos  -->
-            <ul>
-                <li>
-                    <img src="./assets/footer-logo-6.png" alt="Ruby Productions">
-                </li>
+                    <li>
+                        <img src="./assets/footer-logo-2.png" alt="Leaping Dolphin Sound Systems">
+                    </li>
 
-                <li>
-                    <img src="./assets/footer-logo-2.png" alt="Leaping Dolphin Sound Systems">
-                </li>
+                    <li>
+                        <img src="./assets/footer-logo-4.png" alt="Iron Lion Zion">
+                    </li>
 
-                <li>
-                    <img src="./assets/footer-logo-4.png" alt="Iron Lion Zion">
-                </li>
+                    <li>
+                        <img src="./assets/footer-logo-3.png" alt="Taste The Rainbow and Co.">
+                    </li>
 
-                <li>
-                    <img src="./assets/footer-logo-3.png" alt="Taste The Rainbow and Co.">
-                </li>
+                    <li>
+                        <img src="./assets/footer-logo-1.png" alt="Flixtr">
+                    </li>
 
-                <li>
-                    <img src="./assets/footer-logo-1.png" alt="Flixtr">
-                </li>
+                </ul>
 
-            </ul>
+                <!-- HTML5 unordered list with images in each list item -->
+                <!-- This ul creates a neat arrangement of images for the sites social media icons  -->
+                <ul>
 
-            <!-- HTML5 unordered list with images in each list item -->
-            <!-- This ul creates a neat arrangement of images for the sites social media icons  -->
-            <ul>
+                    <li>
+                        <img src="./assets/yotuube.png" alt="YouTube">
+                    </li>
 
-                <li>
-                    <img src="./assets/yotuube.png" alt="YouTube">
-                </li>
+                    <li>
+                        <img src="./assets/facebook.png" alt="Facebook">
+                    </li>
 
-                <li>
-                    <img src="./assets/facebook.png" alt="Facebook">
-                </li>
+                    <li>
+                        <img src="./assets/spotify.png" alt="Spotify">
+                    </li>
 
-                <li>
-                    <img src="./assets/spotify.png" alt="Spotify">
-                </li>
+                </ul>
 
-            </ul>
+                <h3 class="footer-heading">Weblectric</h3>
 
-            <h3 class="footer-heading">Weblectric</h3>
+            </div>
 
-        </div>
-
-        <!-- 
+            <!-- 
 
                 
 
@@ -365,12 +391,11 @@
                 <img src="./assets/facebook.png" alt="Facebook">
                 <img src="./assets/spotify.png" alt="Spotify"> -->
 
-        </div>
+    </div>
 
     </footer>
 
     </div>
-
 
 </body>
 

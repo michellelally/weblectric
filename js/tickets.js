@@ -17,8 +17,12 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+
+
 // this function is responsible for displaying the items the user adds to the cart
 function ready() {
+
+
 
     // getting element with a class name of btn-danger and storing them to a variable
     // this returns a list of objects with this class name
@@ -62,39 +66,75 @@ function ready() {
     }
 
     // getting element with a class name of btn-purchase and
-   document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-// removes items from the cart once they're purchased
-// redirects to PayPal 
-function purchaseClicked() {
 
-    // check if logged in 
-    // if the user is not logged in
-    if (!localStorage.getItem("loggedIn")) {
+// this function includes the code I was provided with on the EmailJS docs
+window.onload = function () {
 
-        // alert the user they must have an account to buy a ticket
-        alert("You must have an account to purchase!")
+    // using an eventListener to register when the user clicks the submit button
+    document.getElementById('purchase-button-form').addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        // getting the users email address from the form
+        //var email = document.getElementById("email").value;
+
+        // getting the users name from the form
+        //var name = document.getElementById("firstname").value;
+
+        // this is an object that is used by the EmailJS template for the email
+        // these are needed to have the users name displayed in the email and to send it to their inbox
+        // setting the variables to the users email and name
+
         
-        //re direct them to the register page
-        window.open("register.html")
-        return;
-    }
+        var email = localStorage.getItem("email");
+        var firstname = localStorage.getItem("firstname");
 
-    // getting element with a class name of cart-items and storing the item at index 0 to a variable
-    var cartItems = document.getElementsByClassName('cart-items')[0]
+        var templateParams = {
+            email: email,
+            name: firstname
+        };
 
-    // while the element has other elements inside it,
-    while (cartItems.hasChildNodes()) {
+        // this function is responsible for sending the email 
+        // the paramters are unique identifiers provided on our EmailJS account
+        // the first parameter is a service id, which is what connects our email address with EmailJS 
+        // the second is the template id, this will determine what the email says and is set up on the EmailJS dashboard
 
-        // remove the first element 
-        cartItems.removeChild(cartItems.firstChild)
-    }
+        emailjs.send('service_he5dnbc', 'template_9hbccd7', templateParams)
+            .then(function () {
+                // displays success to the console if the email was sent
+                console.log('SUCCESS!');
+            }, function (error) {
+                // displays failed to the console if the email was not sent
+                console.log('FAILED...', error);
+            });
 
-    // updating the total 
-    updateCartTotal()
 
+    });
 }
+
+
+// // removes items from the cart once they're purchased
+// // redirects to PayPal 
+// function purchaseClicked() {
+
+
+//     // getting element with a class name of cart-items and storing the item at index 0 to a variable
+//     var cartItems = document.getElementsByClassName('cart-items')[0]
+
+//     // while the element has other elements inside it,
+//     while (cartItems.hasChildNodes()) {
+
+//         // remove the first element 
+//         cartItems.removeChild(cartItems.firstChild)
+//     }
+
+//     // updating the total 
+//     updateCartTotal()
+
+// }
 
 // this function is for removing the items when the user clicks the remove button
 function removeCartItem(event) {
@@ -209,6 +249,7 @@ function addItemToCart(title, price) {
     // getting element with a class name of cart-quantity-input and adding an event listener that calls quanitityChanged() when the value changes
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
+
 
 // changed the total displayed to the user if an item is added, removed or changed
 function updateCartTotal() {
