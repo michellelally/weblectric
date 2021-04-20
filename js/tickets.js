@@ -250,3 +250,5 @@ function updateCartTotal() {
     // updating the inner text to the updated total 
     document.getElementsByClassName('cart-total-price')[0].innerText = '€' + total
 }
+
+// test for github
