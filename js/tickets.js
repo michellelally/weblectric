@@ -62,7 +62,7 @@ function ready() {
     }
 
     // getting element with a class name of btn-purchase and
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+   // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 // removes items from the cart once they're purchased
@@ -243,7 +243,8 @@ function updateCartTotal() {
     // using the Math class to round the total to the nearest 100 
     total = Math.round(total * 100) / 100
 
-    // document.getElementById("paypal-price").value = total;
+    // updating the value of the amount input the the total calculated in the updateCartTotal() function 
+    document.getElementById("paypal-price").value = total;
 
     // getting element with a class name of cart-items and storing the item at index 0 to a variable
     // updating the inner text to the updated total 

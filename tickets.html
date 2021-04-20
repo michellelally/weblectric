@@ -263,16 +263,7 @@
 
                 </div>
 
-                <script>
-                    // // getting element with a class name of cart-price and storing the storing the item at index 0 to a variable
-                    // var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-                    // var price = parseFloat(priceElement.innerText.replace('€', ''))
-                    // console.log("price: " + price)
 
-                        // var test = 500.00
-
-                        // document.getElementById("paypal-price").value = price;
-                </script>
 
                 <!-- HTML5 button to purchase items -->
                 <!-- <button class="btn btn-primary btn-purchase" type="button"> -->
@@ -281,7 +272,7 @@
                     <input type="hidden" name="business" value="weblectricvirtualfestival@gmail.com">
                     <input type="hidden" name="lc" value="US">
                     <input type="hidden" name="item_name" value="Festival Tickets">
-                    <input type="hidden" name="amount" value="20.99">
+                    <input id="paypal-price" type="hidden" name="amount" value="20.99">
                     <input type="hidden" name="currency_code" value="EUR">
                     <input type="hidden" name="button_subtype" value="services">
                     <input type="hidden" name="no_note" value="0">
