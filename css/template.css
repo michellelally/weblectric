@@ -68,8 +68,8 @@ a:link{
     background-color: rgba(255, 255, 255, .3)
 }
 
-h1 {
-	font-family:Nunito;
+h1, .heading {
+	font-family:Ultra;
 	font-size: 9vw;
 	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
 	-webkit-background-clip: text;
@@ -82,10 +82,11 @@ h1 {
     bottom: 0;
     border-top: 1px solid rgba(255, 255, 255, .3);
     text-align: center;
-    margin: 2.5% 0 2.5% 0;
+    margin-top: 2.5%;
     color: white;
     min-width: 100%;
     display: flex;
+    padding-bottom: 2.5%;
 }
 
 .main-footer img {
