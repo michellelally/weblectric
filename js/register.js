@@ -27,7 +27,6 @@ window.onload = function () {
         var email = document.getElementById("email").value;
         var firstname = document.getElementById("firstname").value;
 
-
         var templateParams = {
             email: email,
             name: firstname

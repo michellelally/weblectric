@@ -62,7 +62,7 @@ function ready() {
     }
 
     // getting element with a class name of btn-purchase and
-   // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+   document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 // removes items from the cart once they're purchased
@@ -70,12 +70,16 @@ function ready() {
 function purchaseClicked() {
 
     // check if logged in 
+    // if the user is not logged in
     if (!localStorage.getItem("loggedIn")) {
+
+        // alert the user they must have an account to buy a ticket
         alert("You must have an account to purchase!")
+        
+        //re direct them to the register page
         window.open("register.html")
         return;
     }
-
 
     // getting element with a class name of cart-items and storing the item at index 0 to a variable
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -250,5 +254,3 @@ function updateCartTotal() {
     // updating the inner text to the updated total 
     document.getElementsByClassName('cart-total-price')[0].innerText = '€' + total
 }
-
-// test for github
