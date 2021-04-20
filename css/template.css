@@ -55,6 +55,7 @@ a:link{
 	margin-left:15%;
 	padding-top:2.5%;
     padding-bottom:2.5%;
+    min-height: auto;
 }
 
 .main-nav li {

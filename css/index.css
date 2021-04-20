@@ -58,8 +58,8 @@
 	margin-bottom:8%;
 	margin-right:15%;
 	margin-left:15%;
-	padding-top:1%;
-	padding-bottom:1%;
+	padding:1%;
+
 	}
 
 #content2{
@@ -81,7 +81,7 @@ h1 {
 h2{
 	text-align:left;
 	font-family:Nunito;
-	font-size: 6vw;
+	font-size: 5vw;
 	padding-left:5%;
 	color:white;	
 	}
