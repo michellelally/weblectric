@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-
-
 
 body{
+	/*background-image:linear-gradient(to right top, #f6bd60, #dece70, #c8db8a, #b8e5a8, #b0ecc6, #b6eac3, #bbe8c1, #c0e6bf, #d1d9a4, #e5c993, #f6b791, #ffa69e);*/
 	background-image:linear-gradient(to right top, #9F5D8B, #76FAFF, #08397B, #D64D23, rgb(248, 159, 25), rgb(232, 243, 79));/*to create color gradient*/
 	background-position:centre;
 	background-repeat: no-repeat;/*no interruption*/
@@ -27,6 +24,7 @@ body{
     color: white;
     text-decoration: none;
     padding: 1% .25% 1% .25%;
+
 }
 
 a:link{
@@ -44,19 +42,6 @@ a:link{
 
 }
 
-.main-content{
-    background-color:black;
-	display: block;
-	clear:left;/*clear any floats*/
-	text-align:center;
-	margin-top:none;
-	margin-bottom:5%;
-	margin-right:15%;
-	margin-left:15%;
-	padding-top:2.5%;
-    padding-bottom:2.5%;
-}
-
 .main-nav li {
     padding: 0 5%;
 }
@@ -65,34 +50,36 @@ a:link{
     background-color: rgba(255, 255, 255, .3)
 }
 
-h1, .heading {
-	font-family:Ultra;
+h1 {
+	font-family:ultra;
 	font-size: 9vw;
 	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 1%;
+	-webkit-text-fill-color: transparent;
 }
 
-.section-title {
-    font-weight: normal;
-    color:white;
-    text-align: center;
-    font-size: 2vw;
-    padding: 1%;
-    margin: 0;
-    font-family: Raleway;
+.main-content {
+    background-color:black;
+    display: block;
+    clear:left;/*clear any floats*/
+    text-align:center;
+    margin-top:5%;
+    margin-bottom:8%;
+    margin-right:15%;
+    margin-left:15%;
+    padding-top:1%;
+    padding-bottom:1%;
+    
 }
 
 .main-footer {
     bottom: 0;
     border-top: 1px solid rgba(255, 255, 255, .3);
     text-align: center;
-    margin-top: 2.5%;
+    margin: 2.5% 0 2.5% 0;
     color: white;
     min-width: 100%;
     display: flex;
-    padding-bottom: 2.5%;
 }
 
 .main-footer img {
@@ -106,6 +93,7 @@ h1, .heading {
     width: 50%;
 }
 
+
 .footer-heading {
     font-family:Ultra;
 	font-size: 3vw;
@@ -113,5 +101,5 @@ h1, .heading {
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 1%;
-    text-align: center;
 }
+

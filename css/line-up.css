@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+
+body {  /* created gradient using https://cssgradient.io/  for the backround colour*/
+  background: rgb(8, 127, 140);
+  background: linear-gradient(90deg, rgba(8, 127, 140, 1) 0%, rgba(134, 168, 115, 1) 55%, rgba(187, 159, 6, 1) 100%);
+}
+div{
+  color:white ; /* text beneath photos blue */
+  text-align: center; /*center text */
+  font-family: Raleway;
+
+}
+div > img { /* Notched Corners taken from https://css-tricks.com/notched-boxes/ */
+  clip-path:
+    polygon(
+      0% 5%,     /* top left */
+      5% 0%,     /* top left */
+      95% 0%,    /* top right */
+      100% 5%,   /* top right */
+      100% 95%,  /* bottom right */
+      95% 100%,  /* bottom right */
+      5% 100%,   /* bottom left */
+      0 95%      /* bottom left */
+    );
+}
+/* for the grid */
+.container{
+  display: grid; /*show photos in grid layout */
+  grid-column-gap: 7em; /*gap between grid emlements (photos) */
+  justify-content: center;  /*center grid */
+  }
+}
+.row {
+  max-width: 1200px; /* rows can extend to 1200 */
+  margin: 0 auto; /* no margin */
+  display: grid;
+}
+@media (min-width: 500px) {
+  .row { grid-template-columns: repeat(2, 1fr); }  /* responsive layout, once screen is over 600px, show 2 images row */
+}
+@media (min-width: 900px) {  /* responsive layout, once screen is over 900px, show 3 image row */
+  .row {grid-template-columns: repeat(3, 1fr);
+  }
+header{ /*grid  size picture 1 s/ span 4 */
+  grid-column: 1/4;
+}
+}
+ #grid-headliner > img {
+   width:400px;
+   height:400px;
+ }
+.row > img{
+  width: 350px;
+  height: 350px;
+}
+/* Header design taken from https://freefrontend.com/css-glow-text-effects/ */
+.glow > h1 { /* decorate h1 which is located within .glow class */
+    text-align: center; /* center h1 */
+    font-size: 500%;
+}
+@font-face { /* external design for header */
+    font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+.glow {  /* design elements */
+  font-family: neon;
+  color: #426DFB;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+}

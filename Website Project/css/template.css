@@ -44,6 +44,7 @@ a:link{
 
 }
 
+
 .main-content{
     background-color:black;
 	display: block;
@@ -53,8 +54,9 @@ a:link{
 	margin-bottom:5%;
 	margin-right:15%;
 	margin-left:15%;
-	padding-top:2.5%;
-    padding-bottom:2.5%;
+	padding-top:5%;
+    padding-bottom:5%;
+    min-width: 100%;
 }
 
 .main-nav li {
@@ -72,16 +74,6 @@ h1, .heading {
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 1%;
-}
-
-.section-title {
-    font-weight: normal;
-    color:white;
-    text-align: center;
-    font-size: 2vw;
-    padding: 1%;
-    margin: 0;
-    font-family: Raleway;
 }
 
 .main-footer {
@@ -106,6 +98,7 @@ h1, .heading {
     width: 50%;
 }
 
+
 .footer-heading {
     font-family:Ultra;
 	font-size: 3vw;
@@ -113,5 +106,4 @@ h1, .heading {
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 1%;
-    text-align: center;
 }

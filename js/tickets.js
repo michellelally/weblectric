@@ -75,7 +75,7 @@ function purchaseClicked() {
     } else { 
         // alert the user
         alert("You must have an account to purchase!")
-        window.open("sign-up.html")
+        window.open("register.html")
     }
 
 

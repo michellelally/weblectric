@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
 
 * {
     box-sizing: border-box;
@@ -18,73 +16,10 @@ html, body {
 }
 
 
-.nav ul {
-    margin: 0;
-}
-
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 1% .25% 1% .25%;
-
-}
-
-a:link{
-    text-decoration: none!important;
-  }
-
-.main-nav {
-    text-align: center;
-    font-size: 1.1vw;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-    color: white;
-}
-
-.main-nav li {
-    padding: 0 5%;
-}
-
-/* 
-.nav ul {
-    margin: 0;
-}
-
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    padding: 1%;
-    color: white;
-    text-decoration: none;
-}
-
-.nav {
-    text-align: center;
-    font-size: 1.1vw;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.nav li {
-    padding: 0 5%;
-} */
-
-.nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
-}
-
 .header {
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 1%;
+    /* padding-bottom: 1%; */
 }
 
 /* .festival-name {
@@ -116,7 +51,7 @@ a:link{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -134,14 +69,6 @@ a:link{
     width: auto; 
 }
 
-.section-title {
-    font-weight: normal;
-    color:white;
-    text-align: center;
-    font-size: 2vw;
-    padding: 1%;
-    margin: 0;
-}
 
 .ticket-details {
     display: flex;
@@ -178,35 +105,38 @@ a:link{
 
 .cart-header {
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
 }
 
-.cart-column {
+.cart-column { 
+    margin: 1% 5% 1% 5%;
     display: flex;
     align-items: center;
     border-bottom: 1px solid white;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    padding-bottom: 1%;
 }
 
 .cart-row {
     display: flex;
+    font-size: 1.5vw;
+    color: white;
 }
 
 .cart-item {
-    width: 45%;
+    width: 44%;
+    font-size: 1.5vw;
 }
 
 .cart-price {
     width: 20%;
-    font-size: 1.2em;
     color: white;
+
 }
 
 .cart-quantity {
     width: 35%;
+    height: 25%;
 }
 
 .cart-item-title {
@@ -238,7 +168,7 @@ a:link{
     width: 50px;
     border-radius: 5px;
     border: 1px solid #56CCF2;
-    background-color: #eee;
+    background-color: black;
     color: white;
     padding: 0;
     text-align: center;
@@ -246,55 +176,33 @@ a:link{
     margin-right: 25px;
 }
 
-.cart-row:last-child {
-    border-bottom: 1px solid black;
-}
 
 .cart-row:last-child .cart-column {
     border: none;
 }
-/* 
+
 .cart-total {
-    text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
-} */
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
 
 .cart-total-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: white;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 
 .cart-total-price {
     color: white;
-    font-size: 1.1em;
+    font-size: 1.5vw;
 }
 
 .btn-purchase {
-    margin: 0 auto;
-    font-size: 1.75em;
+    padding: 20%;
+    font-size: 1.5vw;;
     text-align: center;
-}
-
-.main-footer {
-    bottom: 0;
-    border-top: 1px solid rgba(255, 255, 255, .3);
-    text-align: center;
-    margin-top: 2.5%;
-    color: white;
-    min-width: 100%;
-    display: flex;
-}
-
-.main-footer img {
-    height: 5%;
-    width: 5%;
-    padding: 1%;
-}
-
-.socials {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
 }
