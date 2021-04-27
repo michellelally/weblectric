@@ -83,7 +83,7 @@
 		<!--Using Bootstrap Grid design pattern with rows and columns-->
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>About<h1>
+				<h1>About</h1>
 			</div>
 		</div>
 
@@ -99,9 +99,7 @@
 		<div class="row">
 			<div class="midl col-sm-5">
 				<!--5 columns used of 12-->
-				<h3>We want you to let loose and dance the 2020 cobwebs clean out of your system, be it in your kitchen
-					or your garden, with your mum, sister or you're best festival pal! We are bringing Ireland's groovy
-					festival community together to shake it up once more, 2021 style.<br><br> </h3>
+				<h3>We want you to let loose and dance the 2020 cobwebs clean out of your system, be it in your kitchen, living room or your garden, with your mam, sister or your best festival pal! We are bringing Ireland's groovy festival community together to shake it up once more, 2021 style.<br><br> </h3>
 			</div>
 			<div class="midr col-sm-7">
 				<!--other 7 columns used-->
@@ -112,10 +110,11 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<h3>So plug in, turn it up, grab a drink and lets boogie (2019 vibes is that you??).<br><br>
+				<h3>We are even giving you a chance to meet some of Ireland's most talented musicians face to face at our VIP Weblectric After-Party. So what are you waiting for?!<br><br>
+				
+				<h4>PLUG IT IN | TURN IT UP | BOOGIE.<br><br></h4>
 
-					For exclusive content, access to our virtual itinerary and to be included in a chance to win a pair
-					of brand new BEATIT headphones, subscribe to our mailing list!</h3>
+				<h3>For exclusive content, access to our virtual itinerary and to be included in a chance to win a pair of brand new BEATIT headphones, hit the button and subscribe!</h3>
 			</div>
 		</div>
 
@@ -140,20 +139,20 @@
 						<!--Using grid design pattern inside modal box for stylistic effect-->
 						<div class="row">
 							<div class="col-sm-2">
-								<h4 class="modal-title">✨</h4>
+								<h4 class="modal-title">🎧</h4>
 							</div>
 							<div class="col-sm-8">
 								<h4 class="modal-title">Subscribe<br>For More!</h4>
 							</div>
 							<div class="col-sm-2">
-								<h4 class="modal-title">✨</h4>
+								<h4 class="modal-title">🎧</h4>
 							</div>
 						</div>
 						<div class="modal-body">
 							<!--Add code to prevent table cell overflow-->
 							<div id=modalTable style="overflow-x:auto;">
 								<!--Form for user to enter name and email-->
-								<form id="contact-form">
+								<form id="contact-form" onsubmit="return validateForm()" id="myForm" action="orderOnline.html">
 									<div class="form-group">
 										<input type="text" id="name" name="user_name" class="form-control"
 											placeholder="Name">

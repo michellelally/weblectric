@@ -75,3 +75,36 @@ window.onload = function () {
       });
   });
 }
+
+//to ensure value entered is a valid email address format
+function ValidateEmail(email) 
+{
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))//If a combination of these characters joined by an @ symbol, return true
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)//
+}
+
+function validateForm()//to ensure both fields are filled in by user
+	{
+		var name = document.getElementById("name");//grabs 'name' by id
+		var email = document.getElementById("email");//grabs 'email' by id
+		
+			if(name.value.trim()=="")//if name empty string return false
+			{
+				alert("Oops! You forgot to enter your name.");
+				return false;//alert displayed to user
+			}
+			else if(email.value.trim()=="")//if email empty string return false
+			{
+				alert("Don't forget to enter your email!");
+				return false;//alert displayed to user
+			}
+			else
+			{
+				return true;//otherwise return true
+			}
+		
+	}			

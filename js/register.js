@@ -116,7 +116,7 @@ function store() {
     loggedIn = true;
 
     // redirecting the user back to the homepage 
-    window.open("index.html");
+    window.location.href = "index.html"
 }
 
 // this function is called when the user clicks sign up and begins the form validation 

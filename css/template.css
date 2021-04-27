@@ -35,7 +35,7 @@ a:link{
 
 .main-nav {
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 1.4vw;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     color: white;
@@ -67,7 +67,7 @@ a:link{
 }
 
 h1, .heading {
-	font-family:Ultra;
+	font-family:ultra;
 	font-size: 9vw;
 	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
 	-webkit-background-clip: text;

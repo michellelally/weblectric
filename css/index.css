@@ -71,9 +71,10 @@
 /*Styling the fonts*/
 
 h1 {
-	font-family: ultra;
+	font-family:ultra;
+	transform: scale(1, 1.1);
 	font-size: 9vw;
-	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
+	background: -webkit-linear-gradient(#E17FBB, #F9BD46, #EC88C1, #02BCB6, #064977, #EC88C1, #F9BD46, #064977);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	}
@@ -88,7 +89,7 @@ h2{
 	
 h3{
 	text-align:justify;
-	font-family:Raleway;
+	font-family:nunito;
 	font-size: 2vw;
 	color:white;	
 	}
@@ -103,39 +104,33 @@ h4{
 	
 h5{
 	text-align:left;
+	transform: scale(1, 1.16);
 	font-family:Nunito;
 	font-size: 3vw;
 	padding-left:5%;
 	color:white;	
-	}	
+	}	  
+	
+h6{
+	text-align:center;
+	font-family:Nunito;
+	font-size: 3vw;
+	padding-left:5%;
+	color:white;	
+	}
 
-	h6{
-		transform: scale(1, 1.1);
-		text-align:center;
-		font-family:Nunito;
-		font-size: 3vw;
-		padding-left:5%;
-		color:white;   
-		}  
-
-
-		p{
-			font-family:ultra;
-			transform: scale(1, 2.8);
-			font-size: 7vw;
-			background: -webkit-linear-gradient(#E17FBB, #F9BD46, #EC88C1, #02BCB6, #064977, #EC88C1, #F9BD46, #064977);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			}
-p1{
+p{
 	font-family:ultra;
-	font-size: 8vw;
-	background: -webkit-linear-gradient(#EC88C1, #9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
+	transform: scale(1, 2.98);
+	font-size: 7vw;
+	background: -webkit-linear-gradient(#E17FBB, #F9BD46, #EC88C1, #02BCB6, #064977, #EC88C1, #F9BD46, #064977);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	}
-	
+	}	
+
 /* Styling subscribe button, modal box, and modal box close button*/
+
+ 
 
 .popup-btn, .btn {/* styling the 'Subscribe for more!' button and the close button in modal box*/
   display: inline-block;
@@ -144,7 +139,7 @@ p1{
   border: 15px double #333333;
   text-decoration: none;
   color: #333333;
-  background: #02B2AF;
+  background: #F9BD46;
   font-size: 3vw;
   cursor: pointer;
   border-radius: 0.5rem;

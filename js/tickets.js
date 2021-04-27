@@ -69,51 +69,52 @@ function ready() {
     // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+// this commented code block was used to try set up an automatic email to confirm purchase, which I didn't get working in time for presenting. 
 
-// this function includes the code I was provided with on the EmailJS docs
-window.onload = function () {
+// // this function includes the code I was provided with on the EmailJS docs
+// window.onload = function () {
 
-    // using an eventListener to register when the user clicks the submit button
-    document.getElementById('purchase-button-form').addEventListener('submit', function (event) {
+//     // using an eventListener to register when the user clicks the submit button
+//     document.getElementById('purchase-button-form').addEventListener('submit', function (event) {
 
-        event.preventDefault();
+//         event.preventDefault();
 
-        // getting the users email address from the form
-        //var email = document.getElementById("email").value;
+//         // getting the users email address from the form
+//         //var email = document.getElementById("email").value;
 
-        // getting the users name from the form
-        //var name = document.getElementById("firstname").value;
+//         // getting the users name from the form
+//         //var name = document.getElementById("firstname").value;
 
-        // this is an object that is used by the EmailJS template for the email
-        // these are needed to have the users name displayed in the email and to send it to their inbox
-        // setting the variables to the users email and name
+//         // this is an object that is used by the EmailJS template for the email
+//         // these are needed to have the users name displayed in the email and to send it to their inbox
+//         // setting the variables to the users email and name
 
         
-        var email = localStorage.getItem("email");
-        var firstname = localStorage.getItem("firstname");
+//         var email = localStorage.getItem("email");
+//         var firstname = localStorage.getItem("firstname");
 
-        var templateParams = {
-            email: email,
-            name: firstname
-        };
+//         var templateParams = {
+//             email: email,
+//             name: firstname
+//         };
 
-        // this function is responsible for sending the email 
-        // the paramters are unique identifiers provided on our EmailJS account
-        // the first parameter is a service id, which is what connects our email address with EmailJS 
-        // the second is the template id, this will determine what the email says and is set up on the EmailJS dashboard
+//         // this function is responsible for sending the email 
+//         // the paramters are unique identifiers provided on our EmailJS account
+//         // the first parameter is a service id, which is what connects our email address with EmailJS 
+//         // the second is the template id, this will determine what the email says and is set up on the EmailJS dashboard
 
-        emailjs.send('service_he5dnbc', 'template_9hbccd7', templateParams)
-            .then(function () {
-                // displays success to the console if the email was sent
-                console.log('SUCCESS!');
-            }, function (error) {
-                // displays failed to the console if the email was not sent
-                console.log('FAILED...', error);
-            });
+//         emailjs.send('service_he5dnbc', 'template_9hbccd7', templateParams)
+//             .then(function () {
+//                 // displays success to the console if the email was sent
+//                 console.log('SUCCESS!');
+//             }, function (error) {
+//                 // displays failed to the console if the email was not sent
+//                 console.log('FAILED...', error);
+//             });
 
 
-    });
-}
+//     });
+// }
 
 
 // // removes items from the cart once they're purchased
