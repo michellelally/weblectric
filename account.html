@@ -145,90 +145,18 @@
 
         <div class="main-content">
             <!-- HTML5 h1 tag for displaying a heading -->
-            <h1 class="glow">Register</h1>
+            <h1 class="glow">MY ACCOUNT</h1>
 
             <!-- HTML5 h2 tag for displaying a heading -->
-            <h2 class="section-title">Create a Weblectric account</h2>
+            <h2 class="section-title">What would you like to do?</h2>
 
+            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
+            <button onclick="login()">LOG IN TO MY ACCOUNT</button>
 
-            <!-- HTML5 form which allows the user to sign up -->
-            <form id="sign-up-form">
+            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
+            <button onclick="signup()">CREATE AN ACCOUNT</button>
 
-                <!-- HTML5 table for displaying the form neatly -->
-                <table>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users firstname -->
-                            <input type="text" id="firstname" size="15" placeholder="First name*" required>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users surname -->
-                            <input type="text" id="surname" size="15" placeholder="Last name*" required>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users email -->
-                            <input type="email" id="email" placeholder="Email address*" required>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users password -->
-                            <input id="password" placeholder="Enter Password*" type="password" required>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 input tag for recieving the users password -->
-                            <input id="password-check" placeholder="Re-enter Password*" type="password" required>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
-                            <button type="submit" onclick="signIn()">SIGN UP</button>
-                        </td>
-                    </tr>
-
-                    <!-- HTML5 tr tag for creating a row in a table -->
-                    <tr>
-                        <!-- HTML5 td tag for inserting data into the row -->
-                        <td>
-                            <!-- HTML5 button tag for clearing the data inputted by the user -->
-                            <button type="reset" class="cancel-btn">CANCEL</button>
-                        </td>
-                    </tr>
-
-                </table>
+            </table>
 
             </form>
 
@@ -290,7 +218,8 @@
 
                 <h3 class="footer-heading">Weblectric</h3>
                 <p>This is not a real event. This website was created as a college assignment.</p>
-                <p>Please do not try to buy a ticket. Payments made through PayPal are accepted and you will be charged.</p>
+                <p>Please do not try to buy a ticket. Payments made through PayPal are accepted and you will be charged.
+                </p>
 
             </div>
 

@@ -12,6 +12,7 @@ body{
 	background-color:black;/*fallback background colour*/
     height: 100%;/* Full height */
     background-size: cover;/*full background filled*/
+
 	}
 
 .nav ul {
@@ -26,7 +27,7 @@ body{
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 1% .25% 1% .25%;
+    padding: 1% .1% 1% .1%;
 }
 
 a:link{
@@ -45,6 +46,7 @@ a:link{
 }
 
 .main-content{
+    border-radius: 1%;
     background-color:black;
 	display: block;
 	clear:left;/*clear any floats*/
@@ -66,13 +68,28 @@ a:link{
     background-color: rgba(255, 255, 255, .3)
 }
 
-h1, .heading {
-	font-family:ultra;
+h1 {
 	font-size: 9vw;
 	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 1%;
+}
+
+.glow > h1 { /* decorate h1 which is located within .glow class */
+    text-align: center; /* center h1 */
+    font-size: 500%;
+}
+@font-face { /* external design for header */
+    font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+.glow {  /* design elements */
+  font-family: neon;
+  color: #426DFB;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
 }
 
 .section-title {

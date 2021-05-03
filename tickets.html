@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./css/template.css" />
 
     <!--Insert flavicon with Weblectric icon to display with title-->
-    <link rel="icon" href="./assets/favicon.ico" type="image/icon type">
+    <link rel="icon" href="./assets/favicon.ico" type="image/icon">
 
     <script>
         // check if logged in 
@@ -59,12 +59,11 @@
     <!-- This is needed for the shopping cart - read more about this in tickets.js -->
     <script src="./js/tickets.js" async></script>
 
-
     <!-- Loading the EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
     <!-- Internal JavaScript link -->
-    <script type="text/javascript">
+    <script>
 
         // this function is necessary to use EmailJS - read more about this is sign-up.js
         (function () {
@@ -116,7 +115,7 @@
         <div class="main-content">
 
             <!-- HTML5 h2 tag for displaying a heading -->
-            <h1 class="heading">Tickets</h1>
+            <h1 class="glow">Tickets</h1>
 
             <!-- HTML5 div tag for generating a row  -->
             <div class="row">
@@ -303,10 +302,9 @@
                     <input type="hidden" name="button_subtype" value="services">
                     <input type="hidden" name="no_note" value="0">
                     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0"
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
                         name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
-                        height="1">
+                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
                 </form>
 
@@ -364,7 +362,8 @@
                 </ul>
 
                 <h3 class="footer-heading">Weblectric</h3>
-
+                <p>This is not a real event. This website was created as a college assignment.</p>
+                <p>Please do not try to buy a ticket. Payments made through PayPal are accepted and you will be charged.</p>
             </div>
 
             <!-- 
@@ -391,9 +390,7 @@
                 <img src="./assets/facebook.png" alt="Facebook">
                 <img src="./assets/spotify.png" alt="Spotify"> -->
 
-    </div>
-
-    </footer>
+        </footer>
 
     </div>
 
