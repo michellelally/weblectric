@@ -124,17 +124,17 @@
                 <!-- HTML5 unordered list with ahref links in each list item -->
                 <!-- This ul creates the navigation bar for the website -->
                 <ul>
-
                     <li><a href="index.html">HOME</a></li>
 
                     <li><a href="about.html">ABOUT</a></li>
 
                     <li><a href="line-up.html">LINE UP</a></li>
 
-                    <li><a href="tickets.html">BUY TICKETS</a></li>
+                    <li><a href="tickets.html">TICKETS</a></li>
 
-                    <li><a href="get-involved.html">GET INVOLVED</a></li>
+                    <li><a href="get-involved.html">PERFORM</a></li>
 
+                    <li><a href="account.html">ACCOUNT</a></li>
                 </ul>
 
             </nav>
@@ -148,10 +148,54 @@
             <h1 class="glow">MY ACCOUNT</h1>
 
             <!-- HTML5 h2 tag for displaying a heading -->
-            <h2 class="section-title">What would you like to do?</h2>
+            <h2 class="section-title">Login to your account</h2>
 
-            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
-            <button onclick="login()">LOG IN TO MY ACCOUNT</button>
+            <!-- HTML5 form which allows the user to sign up -->
+            <form id="sign-up-form">
+
+                <!-- HTML5 table for displaying the form neatly -->
+                <table>
+
+                    <!-- HTML5 tr tag for creating a row in a table -->
+                    <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
+                        <td>
+                            <p class="error" id="error"></p> <!-- HTML5 p tag for displaying an error message -->
+                        </td>
+                    </tr>
+
+                    <!-- HTML5 tr tag for creating a row in a table -->
+                    <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
+                        <td>
+                            <!-- HTML5 input tag for recieving the users firstname -->
+                            <input type="text" id="firstname" size="15" placeholder="Email*" required>
+                        </td>
+                    </tr>
+
+                    <!-- HTML5 tr tag for creating a row in a table -->
+                    <tr>
+                        <!-- HTML5 td tag for inserting data into the row -->
+                        <td>
+                            <!-- HTML5 input tag for recieving the users firstname -->
+                            <input id="password" placeholder="Enter Password*" type="password" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
+                            <button onclick="login()">LOG IN TO MY ACCOUNT</button>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </form>
+
+            <!-- HTML5 h2 tag for displaying a heading -->
+            <h2 class="section-title">Dont' have an account? Create one here!</h2>
 
             <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
             <button onclick="signup()">CREATE AN ACCOUNT</button>

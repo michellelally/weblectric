@@ -49,18 +49,6 @@
 
 /*Styling the content divs*/
 
-#content1, #content2{
-	background-color:black;
-	display: block;
-	clear:left;/*clear any floats*/
-	text-align:center;
-	margin-top:none;
-	margin-bottom:8%;
-	margin-right:15%;
-	margin-left:15%;
-	padding:1%;
-
-	}
 
 #content2{
 	padding-left:1.2%;
