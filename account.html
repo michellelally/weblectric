@@ -41,22 +41,8 @@
     <!-- External Bootstrap link -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Loading the EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
-    <!-- Internal JavaScript link -->
-    <script>
-
-        // this function is necessary to use EmailJS - read more about this is sign-up.js
-        (function () {
-            // this line initializes the SDK with the User ID we ontained when creating our account
-            emailjs.init('user_Ys8NF4lZ1w8bB1saBzqXz');
-        })();
-
-    </script>
-
     <!-- External JavaScript link -->
-    <script src="./js/register.js"></script>
+    <script src="./js/account.js"></script>
 
 
     <!-- Internal CSS tag -->
@@ -151,7 +137,7 @@
             <h2 class="section-title">Login to your account</h2>
 
             <!-- HTML5 form which allows the user to sign up -->
-            <form id="sign-up-form">
+            <form id="login-form">
 
                 <!-- HTML5 table for displaying the form neatly -->
                 <table>
@@ -169,7 +155,7 @@
                         <!-- HTML5 td tag for inserting data into the row -->
                         <td>
                             <!-- HTML5 input tag for recieving the users firstname -->
-                            <input type="text" id="firstname" size="15" placeholder="Email*" required>
+                            <input type="text" id="email" size="15" placeholder="Email*" required>
                         </td>
                     </tr>
 
@@ -195,7 +181,7 @@
             </form>
 
             <!-- HTML5 h2 tag for displaying a heading -->
-            <h2 class="section-title">Dont' have an account? Create one here!</h2>
+            <h2 class="section-title">Dont' have an account? Create one!</h2>
 
             <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
             <button onclick="signup()">CREATE AN ACCOUNT</button>

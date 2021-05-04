@@ -58,6 +58,7 @@ a:link{
 	padding-top:2.5%;
     padding-bottom:2.5%;
     min-height: auto;
+    padding: 1.75%;
 }
 
 .main-nav li {
@@ -73,13 +74,8 @@ h1 {
 	background: -webkit-linear-gradient(#EC88C1,#9F5D8B, #76FAFF, #08397B, #D64D23, rgb(232, 243, 79), rgb(248, 159, 25));
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 1%;
 }
 
-.glow > h1 { /* decorate h1 which is located within .glow class */
-    text-align: center; /* center h1 */
-    font-size: 500%;
-}
 @font-face { /* external design for header */
     font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);

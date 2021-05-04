@@ -32,7 +32,7 @@
     <!--Insert flavicon with Weblectric icon to display with title-->
     <link rel="icon" href="./assets/favicon.ico" type="image/icon">
 
-    <script>
+    <!-- <script>
         // check if logged in 
         // if the user is not logged in
         if (!localStorage.getItem("loggedIn")) {
@@ -41,9 +41,9 @@
             alert("You must have an account to purchase!")
 
             //re direct them to the register page
-            window.location.href = "register.html"
+            window.location.href = "account.html"
         }
-    </script>
+    </script> -->
 
     <!-- External Bootsrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -291,7 +291,7 @@
                 </div>
 
                 <!-- HTML5 button to purchase items -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form id="pay-button"action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="weblectricvirtualfestival@gmail.com">
