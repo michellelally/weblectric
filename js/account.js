@@ -25,7 +25,7 @@ function login() {
 
     if (email == emailLS) {
         if (password == passwordLS) {
-            alert("logged in ")
+            alert("Successfully logged in.")
             // redirecting the user back to the homepage 
             window.location.href = "index.html"
         } else {

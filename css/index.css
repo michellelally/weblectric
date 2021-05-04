@@ -22,7 +22,7 @@
 	height: 200px;
 	width: 5076px;
 	animation: slide 60s linear infinite;/*to keep it sliding ad infinitum*/
-	padding:1%;
+	padding: 0;
 	}
 
 @keyframes slide{/*using keyframes on sliding background image with transform element*/

@@ -17,23 +17,6 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-// this function includes the code I was provided with on the EmailJS docs
-window.onload = function () {
-
-    // using an eventListener to register when the user clicks the submit button
-    document.getElementById('pay-button').addEventListener('onclick', function (event) {
-
-        var loggedIn = localStorage.getItem("loggedIn")
-
-        if (!loggedIn) {
-            alert("You must have an account to purchase!")
-            // redirecting the user back to the account page 
-            window.location.href = "account.html"
-        }
-
-    }
-}
-
 // this function is responsible for displaying the items the user adds to the cart
 function ready() {
 
